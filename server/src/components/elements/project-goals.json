@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_elements_project_goals",
+  "info": {
+    "displayName": "project_goals",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "goal": {
+      "type": "richtext"
+    }
+  }
+}

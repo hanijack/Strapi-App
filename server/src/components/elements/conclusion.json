@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_elements_conclusions",
+  "info": {
+    "displayName": "conclusion"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "blocks"
+    }
+  }
+}

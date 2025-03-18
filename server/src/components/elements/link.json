@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_elements_links",
+  "info": {
+    "displayName": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "href": {
+      "type": "string"
+    },
+    "external": {
+      "type": "boolean",
+      "default": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

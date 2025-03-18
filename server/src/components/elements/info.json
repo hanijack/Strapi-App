@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_elements_infos",
+  "info": {
+    "displayName": "info",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Project_Name": {
+      "type": "string"
+    },
+    "Construction_Name": {
+      "type": "string"
+    },
+    "Service": {
+      "type": "string"
+    },
+    "Location": {
+      "type": "string"
+    }
+  }
+}

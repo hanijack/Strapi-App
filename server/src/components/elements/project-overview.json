@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_elements_project_overviews",
+  "info": {
+    "displayName": "project_overview",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Project_Name": {
+      "type": "string"
+    },
+    "Location": {
+      "type": "string"
+    },
+    "Consultant": {
+      "type": "string"
+    },
+    "Project_Type": {
+      "type": "string"
+    }
+  }
+}
