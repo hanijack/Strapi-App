@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react';
 
+
+
 const ServerCounter = ({ start, end, duration ,icon,text}) => {
   const [count, setCount] = useState(start);
 

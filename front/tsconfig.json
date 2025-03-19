@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.ts", ".next/types/**/*.ts", "src/components/ItemList.tsx", "src/components/StrapiImage.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.ts", ".next/types/**/*.ts", "src/components/ItemList.jsx", "src/components/StrapiImage.jsx", "src/data/loaders.js", "src/utils/fetch-api.js", "src/utils/strapi-url.js"],
   "exclude": ["node_modules"]
 }

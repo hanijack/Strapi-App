@@ -9,6 +9,12 @@ const nextConfig: NextConfig = {
         port: "1337",
         pathname: "/uploads/**/*",
       },
+      {
+        protocol: "https",
+        hostname: "skilled-kindness-813ac194ed.media.strapiapp.com",
+        port: '',
+        pathname: "/*",
+      },
     ],
   },
 };

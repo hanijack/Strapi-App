@@ -1,14 +1,14 @@
-interface FetchAPIOptions {
-    method: "GET" | "POST" | "PUT" | "DELETE";
-    authToken?: string;
-    body?: Record<string, unknown>;
-    next?: NextFetchRequestConfig;
-}
+// interface FetchAPIOptions {
+//     method: "GET" | "POST" | "PUT" | "DELETE";
+//     authToken?: string;
+//     body?: Record<string, unknown>;
+//     next?: NextFetchRequestConfig;
+// }
 
-export async function fetchAPI(url: string, options: FetchAPIOptions) {
+export async function fetchAPI(url, options) {
     const { method, authToken, body, next } = options;
 
-    const headers: RequestInit & { next?: NextFetchRequestConfig } = {
+    const headers = {
         method,
         headers: {
             "Content-Type": "application/json",

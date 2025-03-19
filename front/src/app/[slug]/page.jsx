@@ -1,6 +1,6 @@
 import { getPageBySlug } from "@/data/loaders";
 import { StrapiImage } from "@/components/StrapiImage";
-
+import { notFound } from "next/navigation";
 
 
 

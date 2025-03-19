@@ -26,7 +26,7 @@ const Slider = ({slides}) => {
         className="w-max  flex transition-all ease-in-out duration-1000"
         style={{ transform: `translateX(-${current * 100}vw)` }}
       >
-            {slides.map(slide =>(
+            {slides.map((slide) =>(
                 <div key={slide.id} className="relative w-screen ">
                     <StrapiImage src={slide.Image.url} alt="pic" fill={true} className="object-fill" sizes="25%"/>
                 </div>
@@ -35,7 +35,7 @@ const Slider = ({slides}) => {
 
       </div>
       <div className="absolute left-1/2 bottom-8 flex gap-4 items-center justify-center">
-        {slides.map((slide, index) => (
+        {slides.map((slide , index) => (
           <div
             key={slide.id}
             onClick={() => setCurrent(index)}
