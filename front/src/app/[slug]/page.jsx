@@ -12,7 +12,7 @@ async function loader(slug){
 }
 
 const page = async({params}) => {
-  const slug = (await params).slug;
+  const slug = await params.slug;
   console.log(slug)
 const res = await loader(slug)
   const data=res[0]
