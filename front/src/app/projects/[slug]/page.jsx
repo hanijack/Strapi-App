@@ -25,14 +25,14 @@ console.log("Slug:", params?.slug);
     <div className="flex flex-col ">
       
       <Slider slides={data?.slider} />
-      <div className="flex flex-col px-6 md:px-16 xl:px-24">
-        <h1 className="font-bold text-2xl my-6 text-center  text-primary  bg-slate-200 p-6">
-        <div className="w-full relative h-[400px]  mb-3">
+      <div className="flex flex-col px-6 md:px-16 pb-12 xl:px-24 w-10/12 self-center lg:mt-[-70px] shadow-xl  z-30">
+        <h1 className="font-bold text-2xl my-6 text-center  text-primary  bg-slate-200 p-6 ">
+        <div className=" relative h-[400px]  mb-3 ">
         <StrapiImage
           src={data?.image?.url}
           fill
           alt={`${data?.title} image`}
-          className="object-cover"
+          className="object-cover "
         />
       </div>
           {data?.title}
@@ -61,7 +61,7 @@ console.log("Slug:", params?.slug);
           Object.entries(data?.Project_Overview[0])
             .filter(([key]) => key !== "id" && key !== "__component") 
             .map(([key, val], i)  => (
-              <div key={i} className=" py-2 flex gap-2">
+              <div key={i} className=" py-2 flex flex-col gap-2">
                 <h4 className="font-bold text-primary">{key}:</h4>
                 <p className="text-secondary">{val }</p>
               </div>
@@ -73,7 +73,7 @@ console.log("Slug:", params?.slug);
                 <h4 className="font-bold text-primary text-xl py-4">{index+1}-{i.feature_title}</h4>
                 <ol className="px-8 py-2 md:py-6 lg:py-8 flex flex-col gap-4">
                  { i.name.map((i ) => (
-                  <li key={i.name} className="flex flex-wrap items-center"><h4 className="text-primary font-semibold text-lg">{i.name}</h4>: <p className="text-lg text-secondary">{i.description}</p></li>
+                  <li key={i.name} className="flex flex-col gap-2"><h4 className="text-primary font-semibold text-lg">{i.name}</h4> <p className="text-lg text-secondary">{i.description}</p></li>
                  )) }
                 </ol>
               </ol>
