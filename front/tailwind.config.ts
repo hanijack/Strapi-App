@@ -15,6 +15,9 @@ export default {
         secondary:"#333333",
         links:"#e3958b"
       },
+      clipPath:{
+        "slope": "polygon(0 0, 0% 100%, 100% 100%);",
+      },
     },
   },
   plugins: [],

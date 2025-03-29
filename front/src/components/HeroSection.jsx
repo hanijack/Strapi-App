@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const HeroSection = ({ data }) => {
   return (
-    <div className="mt-8 px-4 py-2 flex flex-col md:flex-row justify-between gap-8 lg:gap-16 md:h-[600px] mb-10 md:mb-80 xl:mb-40">
+    <div className="mt-8 px-4 py-2 flex flex-col md:flex-row justify-between gap-8 lg:gap-16 md:h-[800px] mb-10 md:mb-40  items-center">
       <div className="w-full  md:h-full md:w-1/2">
         <h2 className="text-primary text-2xl font-bold mb-3">{data.title}</h2>
         <p className="text-secondary font-[300] mb-6">{data.description}</p>
@@ -22,7 +22,7 @@ const HeroSection = ({ data }) => {
           </div>
         ))}
       </div>
-      <div className="relative h-[400px] md:h-full w-full md:w-1/2">
+      <div className="relative h-[400px] md:h-3/4 w-full md:w-1/2 self-center">
         <StrapiImage
           src={data.image.url}
           fill

@@ -10,9 +10,9 @@ const Achievements = () => {
         <h1 className=" text-primary text-2xl font-bold mb-3">Best General Contracting Company in Saudi Arabia</h1>
         <p className="text-secondary font-[300] mb-6">With over 20 years of experience, DTC is a leading general contracting company in Saudi Arabia, offering comprehensive turnkey construction solutions across various industries. From infrastructure development to commercial and industrial construction, we deliver high-quality projects on time and within budget.</p>
         <div className="flex justify-evenly gap-6">
-            <Counter start={0} end={60} duration={2000} icon={<LiaCertificateSolid color="#F35C7A" size="4em"/>} text="projects"/>
-            <Counter start={0} end={126} duration={3000} icon={<GrUserWorker color="F35C7A" size="4em"/>} text="workers"/>
-            <Counter start={0} end={10} duration={1000} icon={<PiCertificate color="F35C7A" size="4em"/>} text="certificates"/>
+            <Counter start={0} end={60} duration={2000} icon={<LiaCertificateSolid color="cc7351" size="4em"/>} text="Projects Completed"/>
+            <Counter start={0} end={126} duration={3000} icon={<GrUserWorker color="cc7351" size="4em"/>} text="Work Employed"/>
+            <Counter start={0} end={10} duration={1000} icon={<PiCertificate color="cc7351" size="4em"/>} text="Certificates"/>
         </div>
     </div>
   )

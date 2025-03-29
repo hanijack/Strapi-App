@@ -21,7 +21,7 @@ const Slider = ({slides}) => {
     };
   }, [current , slides]);
   return (
-    <div className="flex h-[calc(100vh-80px)] overflow-hidden mb-auto">
+    <div className="flex h-[450px] overflow-hidden mb-auto relative">
       <div
         className="w-max  flex transition-all ease-in-out duration-1000"
         style={{ transform: `translateX(-${current * 100}vw)` }}
@@ -39,12 +39,12 @@ const Slider = ({slides}) => {
           <div
             key={slide.id}
             onClick={() => setCurrent(index)}
-            className={`w-3 h-3 rounded-full ring-1 ring-gray-600  flex justify-center items-center cursor-pointer ${
+            className={`w-3 h-3 rounded-full ring-1 ring-[#b58c4d]  flex justify-center items-center cursor-pointer ${
               current === index ? "scale-150" : ""
             }`}
           >
             {current === index && (
-              <div className="w-[6px] h-[6px] bg-gray-600 rounded-full"></div>
+              <div className="w-[6px] h-[6px] bg-[#b58c4d] rounded-full"></div>
             )}
           </div>
         ))}

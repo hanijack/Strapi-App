@@ -22,8 +22,8 @@ const ServerCounter = ({ start, end, duration ,icon,text}) => {
     window.requestAnimationFrame(step);
   }, [start, end, duration]);
 
-  return <div className='flex flex-col'>
-    {icon}
+  return <div className='flex flex-col justify-center'>
+    <div className='self-center'>{icon}</div>
     <h1 className='text-primary text-2xl font-bold my-3'>{count}+</h1>
     <p  className="text-primary font-semibold text-sm mb-6">{text}</p>
     </div>;

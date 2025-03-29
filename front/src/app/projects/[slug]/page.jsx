@@ -25,8 +25,8 @@ console.log("Slug:", params?.slug);
     <div className="flex flex-col ">
       
       <Slider slides={data?.slider} />
-      <div className="flex flex-col px-6 md:px-16 pb-12 xl:px-24 w-10/12 self-center lg:mt-[-70px] shadow-xl  z-30">
-        <h1 className="font-bold text-2xl my-6 text-center  text-primary  bg-slate-200 p-6 ">
+      <div className="flex flex-col px-6 md:px-16 pb-12 xl:px-24 w-10/12 self-center lg:-mt-24 shadow-xl bg-white z-30">
+        <h1 className="font-bold text-2xl my-6 text-center  text-primary  p-6 ">
         <div className=" relative h-[400px]  mb-3 ">
         <StrapiImage
           src={data?.image?.url}
