@@ -40,7 +40,7 @@ const Header = () => {
             <p className='flex items-center gap-1'><FaClock />Sat – thu 09:00 am – 5:00 pm</p>
           </div>
         </div>
-        <div className='w-1/4 flex justify-center items-center gap-6 text-[#cc7351] font-semibold  bg-[#d2b48c] clip-path-slope '>
+        <div className='w-1/4 flex justify-center items-center gap-6 text-[#cc7351] font-semibold  bg-[#d2b48c] clip-path-sloping '>
           <Link href="./projects"><p>Projects</p></Link>
           <Link href="./contact">Contact Us</Link>
         </div>

@@ -15,8 +15,8 @@ export default {
         secondary:"#333333",
         links:"#e3958b"
       },
-      clipPath:{
-        "slope": "polygon(0 0, 0% 100%, 100% 100%);",
+      clipPath: {
+        'sloping': 'polygon(0 0, 100% 0, 100% 20%, 0 100%)',
       },
     },
   },
