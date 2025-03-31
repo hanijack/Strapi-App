@@ -29,26 +29,3 @@ const config: Config = {
 export default config;
 
 
-// export default {
-//   content: [
-//     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-//     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-//     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-//   ],
-//   theme: {
-//     extend: {
-//       colors: {
-//         background: "var(--background)",
-//         foreground: "var(--foreground)",
-//         primary: "#b58c4d",
-//         secondary:"#333333",
-//         links:"#e3958b"
-//       },
-//       clipPath: {
-//         'sloping': 'polygon(0 1%, 69% -620%, 100% 100%, -1% 100%)',
-//       },
-//     },
-//   },
-//   plugins: [ require('tailwind-clip-path'),],
-// } 
-
