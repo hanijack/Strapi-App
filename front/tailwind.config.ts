@@ -1,6 +1,7 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
+import tailwindClipPath from 'tailwind-clip-path';
 
-export default {
+const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,16 +10,45 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        primary: "#b58c4d",
-        secondary:"#333333",
-        links:"#e3958b"
+        background: "var(--background)", // Custom background color
+        foreground: "var(--foreground)", // Custom foreground color
+        primary: "#b58c4d", // Primary color
+        secondary: "#333333", // Secondary color
+        links: "#e3958b", // Links color
       },
       clipPath: {
-        'sloping': 'polygon(0 0, 100% 0, 100% 20%, 0 100%)',
+        sloping: 'polygon(0 2%, 97% -5%, 100% 115%, 0% 102%)', // Custom sloping effect
       },
     },
   },
-  plugins: [],
-} satisfies Config;
+  plugins: [
+    tailwindClipPath, // Plugin for clip-path utilities
+  ],
+};
+
+export default config;
+
+
+// export default {
+//   content: [
+//     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+//     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+//     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+//   ],
+//   theme: {
+//     extend: {
+//       colors: {
+//         background: "var(--background)",
+//         foreground: "var(--foreground)",
+//         primary: "#b58c4d",
+//         secondary:"#333333",
+//         links:"#e3958b"
+//       },
+//       clipPath: {
+//         'sloping': 'polygon(0 1%, 69% -620%, 100% 100%, -1% 100%)',
+//       },
+//     },
+//   },
+//   plugins: [ require('tailwind-clip-path'),],
+// } 
+

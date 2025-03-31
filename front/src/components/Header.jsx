@@ -30,9 +30,9 @@ const Header = () => {
       <Menu />
     </div>
     {/* large screens */}
-    <div className="hidden lg:flex h-full items-center justify-between  flex-col ">
+    <div className="hidden lg:flex h-full items-center justify-between  flex-col  bg-[#d2b48c]">
       <div className='flex w-full h-[60px] '>
-        <div className=" lg:w-3/4 flex gap-2 justify-between bg-primary p-6 text-white">
+        <div className=" lg:w-3/4 flex gap-2 justify-between bg-primary p-6 text-white clip-path-sloping">
           <div className='flex text-xs gap-4'>
             <p className='flex items-center gap-1'><FaPhoneAlt />+966 50 300 7773 </p>
             <p className='flex items-center gap-1'><FaLocationDot />Saudi arabia- P.o box 42323 medina</p>
@@ -40,7 +40,7 @@ const Header = () => {
             <p className='flex items-center gap-1'><FaClock />Sat – thu 09:00 am – 5:00 pm</p>
           </div>
         </div>
-        <div className='w-1/4 flex justify-center items-center gap-6 text-[#cc7351] font-semibold  bg-[#d2b48c] clip-path-sloping '>
+        <div className='w-1/4 flex justify-center items-center gap-6 text-[#cc7351] font-semibold   '>
           <Link href="./projects"><p>Projects</p></Link>
           <Link href="./contact">Contact Us</Link>
         </div>
@@ -53,8 +53,8 @@ const Header = () => {
           <div className='flex gap-2 items-center font-semibold text-sm'><div className='border-2 border-solid p-3 border-primary rounded-full'><FaClock className='text-primary w-[22px] h-[22px]' /></div>Sat – thu 09:00 am – 5:00 pm</div>
         </div>
      </div>
-      <div className='flex h-[50px] w-full'>
-        <div className="w-1/3 flex justify-evenly items-center h-[50px] bg-[#d2b48c]">
+      <div className='flex h-[50px] w-full bg-primary '>
+        <div className="w-1/3 flex justify-evenly items-center h-[50px] bg-[#d2b48c] clip-path-sloping">
         <NavIcons />
         </div>
         <div className='w-2/3 justify-evenly gap-4 bg-primary flex items-center text-white font-semibold  relative '>
