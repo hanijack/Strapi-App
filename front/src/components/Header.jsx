@@ -16,41 +16,44 @@ const Header = () => {
   return (
     <header className=" relative shadow-md ">
     {/* mobilescreen */}
-    <div className="h-[80px] flex items-center bg-[#f7f7f7] md:h-[120px] md:p-12 justify-between lg:hidden p-4">
+    <div className="h-[80px] flex items-center bg-[#f7f7f7] md:h-[150px] md:p-12 justify-between lg:hidden p-2">
       <div className='flex md:hidden'>
         <Link href="/">
-        <Image src="/logo-icon.png" width={30} height={30} alt='logo'/>
+        <Image src="/logo-icon.png" width={45} height={30} alt='logo'/>
         </Link>
       </div>
       <div className='hidden md:flex lg:hidden'>
         <Link href="/">
-        <Image src="/logo-icon.png" width={60} height={50} alt='logo'/>
+        <Image src="/logo-icon.png" width={60} height={70} alt='logo'/>
         </Link>
       </div>
       <Menu />
-    </div>
     {/* large screens */}
+    </div>
     <div className="hidden lg:flex h-full items-center justify-between  flex-col  bg-[#d2b48c]">
-      <div className='flex w-full h-[60px] '>
-        <div className=" lg:w-3/4 flex gap-2 justify-between bg-primary p-6 text-white clip-path-sloping">
-          <div className='flex text-xs gap-4'>
+      <div className='flex w-full h-[60px] xl:mx-auto'>
+        <div className=" lg:w-3/4 flex gap-2 justify-between bg-primary p-6 text-white clip-path-sloping 2xl:ml-auto text-center">
+          <div className='flex text-xs gap-4  max-w-xl mx-auto text-center justify-center self-center'>
             <p className='flex items-center gap-1'><FaPhoneAlt />+966 50 300 7773 </p>
             <p className='flex items-center gap-1'><FaLocationDot />Saudi arabia- P.o box 42323 medina</p>
             <p className='flex items-center gap-1'><MdEmail />Time.of.creation.co@gmail.com</p>
             <p className='flex items-center gap-1'><FaClock />Sat – thu 09:00 am – 5:00 pm</p>
           </div>
         </div>
-        <div className='w-1/4 flex justify-center items-center gap-6 text-[#cc7351] font-semibold   '>
+        <div className='w-1/4 flex justify-center items-center gap-6 text-[#cc7351] font-semibold  max-w-lg xl:mr-auto '>
           <Link href="./projects"><p>Projects</p></Link>
           <Link href="./contact">Contact Us</Link>
         </div>
      </div>
-     <div className='flex w-full  h-[150px] py-6 px-12 justify-between bg-[#f7f7f7]'>
-        <Image src="/logo-icon.png" width={90} height={60} alt='logo'/>
-        <div className='flex justify-between items-center gap-6'>
-          <div className='flex gap-2 items-center font-semibold text-sm'><div className='border-2 border-solid p-3 border-primary rounded-full'><FaPhoneAlt className='text-primary w-[22px] h-[22px]'/></div>+966 50 300 7773</div>
-          <div className='flex gap-2 items-center font-semibold text-sm'><div className='border-2 border-solid p-3 border-primary rounded-full'><FaLocationDot className='text-primary w-[22px] h-[22px] '/></div>Saudi arabia- P.o box 42323 medina</div>
-          <div className='flex gap-2 items-center font-semibold text-sm'><div className='border-2 border-solid p-3 border-primary rounded-full'><FaClock className='text-primary w-[22px] h-[22px]' /></div>Sat – thu 09:00 am – 5:00 pm</div>
+     <div className='flex w-full gap-4 h-[180px] py-2 px-12  bg-[#f7f7f7]'>
+        <div className='flex justify-between items-center max-w-6xl xl:mx-auto'>
+          <Link href="/" className='relative h-[120px] w-[100px]'><Image src="/logo-icon.png" fill alt='logo'/></Link>
+          <Link href="/" className='flex justify-center items-center'><Image src="/logo-2.png" width={310} height={100} alt='logo2' className='object-cover'/></Link>
+          <div className='flex justify-between items-center gap-6'>
+            <div className='flex gap-2 items-center font-semibold text-sm'><div className='border-2 border-solid p-3 border-primary rounded-full'><FaPhoneAlt className='text-primary w-[22px] h-[22px]'/></div>+966 50 300 7773</div>
+            <div className='flex gap-2 items-center font-semibold text-sm'><div className='border-2 border-solid p-3 border-primary rounded-full'><FaLocationDot className='text-primary w-[22px] h-[22px] '/></div>Saudi arabia- P.o box 42323 medina</div>
+            <div className='flex gap-2 items-center font-semibold text-sm'><div className='border-2 border-solid p-3 border-primary rounded-full'><FaClock className='text-primary w-[22px] h-[22px]' /></div>Sat – thu 09:00 am – 5:00 pm</div>
+          </div>
         </div>
      </div>
       <div className='flex h-[50px] w-full bg-primary '>
@@ -62,9 +65,10 @@ const Header = () => {
             <Link href="./projects"><p>Projects</p></Link>
             <div onMouseOver={()=> setMenu(true)} onMouseLeave={()=> setMenu(false)} className='relative flex justify-center h-full items-center hover:cursor-pointer gap-2' ><p>About</p>
                 {menu && (<ul className='absolute top-12 left-0 right-0 bg-white self-center  h-[200px] w-[150px]  text-[#cc7351] flex flex-col justify-evenly items-center text-lg z-50 transition-all ease-in-out duration-300  inset-shadow-md' onMouseOver={()=> setMenu(true)} >
-                  <Link href="./about" className="bg-white hover:text-white w-full hover:cursor-pointer p-1  flex-1 flex items-center justify-center shadow-md hover:bg-[#cc7351]"><li >About</li></Link>
-                  <Link href="./vision" className="bg-white hover:text-white w-full hover:cursor-pointer flex-1 flex items-center justify-center shadow-md hover:bg-[#cc7351]"><li>Vision</li></Link>
-                 <Link href="./values" className="bg-white hover:text-white w-full hover:cursor-pointer flex-1 flex items-center justify-center shadow-md hover:bg-[#cc7351]"> <li>Values</li></Link>
+                  <Link href="/about" className="bg-white hover:text-white w-full hover:cursor-pointer p-1  flex-1 flex items-center justify-center shadow-md hover:bg-[#cc7351]"><li >About</li></Link>
+                  <Link href="/vision" className="bg-white hover:text-white w-full hover:cursor-pointer flex-1 flex items-center justify-center shadow-md hover:bg-[#cc7351]"><li>Vision</li></Link>
+                 <Link href="/values" className="bg-white hover:text-white w-full hover:cursor-pointer flex-1 flex items-center justify-center shadow-md hover:bg-[#cc7351]"> <li>Values</li></Link>
+                 <Link href="/quality" className="bg-white hover:text-white w-full hover:cursor-pointer flex-1 flex items-center justify-center shadow-md hover:bg-[#cc7351]"> <li>Quality</li></Link>
                 </ul>)}
                 <IoMdArrowDropdown />
             </div>

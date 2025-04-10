@@ -4,18 +4,18 @@ import { getProjectBySlug } from "@/data/loaders";
 import { notFound } from "next/navigation";
 
 
-async function loader(slug ) {
+async function loader(slug) {
 
   const data = await getProjectBySlug(slug);
 
-  // console.log(data);
+  console.log(data);
   if (!data) notFound();
   return data.data;
 }
 
 
 const page = async ({ params }) => {
-  const {slug} = await params?.slug;
+  const {slug} = await params;
     const res = await loader(slug);
     console.log("Params:", params); // Check the full structure of params
 console.log("Slug:", params?.slug);
@@ -25,7 +25,7 @@ console.log("Slug:", params?.slug);
     <div className="flex flex-col ">
       
       <Slider slides={data?.slider} />
-      <div className="flex flex-col px-6 md:px-16 pb-12 xl:px-24 w-10/12 self-center lg:-mt-24 shadow-xl bg-white z-30">
+      <div className="flex flex-col px-6 md:px-16 pb-12 xl:px-24 w-10/12 self-center lg:-mt-24 shadow-xl bg-white z-30 max-w-6xl 2xl:mx-auto">
         <h1 className="font-bold text-2xl my-6 text-center  text-primary  p-6 ">
         <div className=" relative h-[400px]  mb-3 ">
         <StrapiImage
@@ -78,14 +78,14 @@ console.log("Slug:", params?.slug);
                 </ol>
               </ol>
             ))}
-             {data?.Project_Overview[2].goal && (<div>
+             {/* {data?.Project_Overview[2].goal && (<div>
               <h2 className="text-2xl font-bold  text-primary py-4">Goal</h2>
               <p>{data?.Project_Overview[2].goal}</p>
             </div>)}
             {data?.Project_Overview[3].text[0].children && (<div>
               <h2 className="text-2xl font-bold  text-primary py-4">Conclusion</h2>
               <p>{data?.Project_Overview[3].text[0].children[0].text}</p>
-            </div>)}
+            </div>)} */}
       </div>
     </div>
   );
