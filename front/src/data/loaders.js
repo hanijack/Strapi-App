@@ -96,7 +96,7 @@ const projectBySlug=(slug)=>
     const path = "/api/projects";
     const url = new URL(path, BASE_URL);
     url.search = projectBySlug(slug);
-    return await fetchAPI(url.href, { method: "GET" });
+    return await fetchAPI(url.href, { method: "GET" , next: { revalidate: 60 } });
   }
 
 

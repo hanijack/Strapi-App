@@ -4,19 +4,22 @@ import { notFound } from "next/navigation";
 
 
 
+
 async function loader(slug){
   const data = await getPageBySlug(slug)
-  console.log(data)
   if(!data) notFound()
     return data.data
 }
-
+export const generateMetadata=async({params})=>{
+  const slug=await params.slug
+    return {
+    title:`${slug.charAt(0).toUpperCase()+slug.slice(1)}`
+  }
+}
 const page = async({params}) => {
   const slug = await params.slug;
-  console.log(slug)
 const res = await loader(slug)
   const data=res[0]
-  console.log(data)
 
   return (
     <div className="flex flex-col relative mt-8">

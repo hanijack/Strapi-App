@@ -8,9 +8,14 @@ async function loader(){
   if(!data) notFound()
     return data.data
 }
+
+
+export const metadata = {
+  title: "Projects",
+  description: "Our recent projects ",
+};
 const page = async () => {
   const data= await loader()
-  console.log(data)
   return (
    <div className="flex flex-col p-6 md:p-8 xl:px-12 2xl:px-16">
     <div>
