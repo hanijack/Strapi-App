@@ -34,10 +34,10 @@ const Header = () => {
       <div className='flex w-full h-[60px] xl:mx-auto'>
         <div className=" lg:w-3/4 flex gap-2 justify-between bg-primary p-6 text-white clip-path-sloping 2xl:ml-auto text-center">
           <div className='flex text-xs gap-4  max-w-xl mx-auto text-center justify-center self-center'>
-            <p className='flex items-center gap-1'><FaPhoneAlt />+966 50 300 7773 </p>
-            <p className='flex items-center gap-1'><FaLocationDot />Saudi arabia- P.o box 42323 medina</p>
-            <p className='flex items-center gap-1'><MdEmail />Time.of.creation.co@gmail.com</p>
-            <p className='flex items-center gap-1'><FaClock />Sat – thu 09:00 am – 5:00 pm</p>
+            <p className='flex items-center justify-center gap-1'><FaPhoneAlt size="3em"/>+966 50 300 7773 </p>
+            <p className='flex items-center justify-center  gap-1'><FaLocationDot size="2.5em"/>Saudi arabia-P.o box 42323 medina</p>
+            <p className='flex items-center justify-center gap-1'><MdEmail size="2em"/>Time.of.creation.co@gmail.com</p>
+            <p className='flex items-center justify-center gap-1 '><FaClock size="3em"/>Sat – thu 09:00 am – 5:00 pm</p>
           </div>
         </div>
         <div className='w-1/4 flex justify-center items-center gap-6 text-[#cc7351] font-semibold  max-w-lg xl:mr-auto '>

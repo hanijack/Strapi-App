@@ -34,14 +34,14 @@ export async function getHomePage() {
   const path = "/api/home";
   const url = new URL(path, BASE_URL);
   url.search = homePageQuery;
-  return await fetchAPI(url.href, { method: "GET" });
+  return await fetchAPI(url.href, { method: "GET", next: { revalidate: 60 } });
 }
 
 export async function getProjects(){
   const path= "/api/projects"
   const url = new URL(path,BASE_URL)
   url.search=projectsQuery
-  return await fetchAPI(url.href,{method:"GET"})
+  return await fetchAPI(url.href,{method:"GET" , next: { revalidate: 60 }})
 }
 const projectBySlug=(slug)=>
   qs.stringify({
@@ -114,5 +114,5 @@ export async function getPageBySlug(slug) {
   const path = "/api/pages";
   const url = new URL(path, BASE_URL);
   url.search = pageBySlugQuery(slug);
-  return await fetchAPI(url.href, { method: "GET" });
+  return await fetchAPI(url.href, { method: "GET", next: { revalidate: 60 } });
 }
