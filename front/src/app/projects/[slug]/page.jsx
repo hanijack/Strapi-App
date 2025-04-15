@@ -86,14 +86,14 @@ const page = async ({ params }) => {
               </ol>
             </ol>
           ))}
-        {/* {data?.Project_Overview[2].goal && (<div>
+        {data?.Project_Overview[2].goal && (<div>
               <h2 className="text-2xl font-bold  text-primary py-4">Goal</h2>
               <p>{data?.Project_Overview[2].goal}</p>
             </div>)}
-            {data?.Project_Overview[3].text[0].children && (<div>
+            {data?.Project_Overview[3].text[0]?.children && (<div>
               <h2 className="text-2xl font-bold  text-primary py-4">Conclusion</h2>
               <p>{data?.Project_Overview[3].text[0].children[0].text}</p>
-            </div>)} */}
+            </div>)}
       </div>
     </div>
   );
