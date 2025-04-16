@@ -32,12 +32,12 @@ const Header = () => {
     </div>
     <div className="hidden lg:flex h-full items-center justify-between  flex-col  bg-[#d2b48c]">
       <div className='flex w-full h-[60px] xl:mx-auto'>
-        <div className=" lg:w-3/4 flex gap-2 justify-between bg-primary p-6 text-white clip-path-sloping 2xl:ml-auto text-center">
-          <div className='flex text-xs gap-4  max-w-xl mx-auto text-center justify-center self-center'>
-            <p className='flex items-center justify-center gap-1'><FaPhoneAlt size="3em"/>+966 50 300 7773 </p>
-            <p className='flex items-center justify-center  gap-1'><FaLocationDot size="2.5em"/>Saudi arabia-P.o box 42323 medina</p>
-            <p className='flex items-center justify-center gap-1'><MdEmail size="2em"/>Time.of.creation.co@gmail.com</p>
-            <p className='flex items-center justify-center gap-1 '><FaClock size="3em"/>Sat – thu 09:00 am – 5:00 pm</p>
+        <div className=" lg:w-3/4 flex gap-2 justify-between bg-primary p-6 text-white clip-path-sloping 2xl:ml-auto text-center ">
+          <div className='flex text-xs gap-4  max-w-xl mx-auto text-center justify-center self-center 2xl:gap-8'>
+            <p className='flex items-center justify-center gap-1 whitespace-nowrap'><FaPhoneAlt size="1.5em"/>+966 50 300 7773 </p>
+            <p className='flex items-center justify-center  gap-1 whitespace-nowrap'><FaLocationDot size="1.5em"/>Saudi arabia-P.o box 42323 medina</p>
+            <p className='flex items-center justify-center gap-1 whitespace-nowrap'><MdEmail size="2em"/>Time.of.creation.co@gmail.com</p>
+            <p className='flex items-center justify-center gap-1 whitespace-nowrap '><FaClock size="1.5em"/>Sat – thu 09:00 am – 5:00 pm</p>
           </div>
         </div>
         <div className='w-1/4 flex justify-center items-center gap-6 text-[#cc7351] font-semibold  max-w-lg xl:mr-auto '>
@@ -50,9 +50,9 @@ const Header = () => {
           <Link href="/" className='relative h-[120px] w-[100px]'><Image src="/logo-icon.png" fill alt='logo'/></Link>
           <Link href="/" className='flex justify-center items-center'><Image src="/logo-2.png" width={310} height={100} alt='logo2' className='object-cover'/></Link>
           <div className='flex justify-between items-center gap-6'>
-            <div className='flex gap-2 items-center font-semibold text-sm'><div className='border-2 border-solid p-3 border-primary rounded-full'><FaPhoneAlt className='text-primary w-[22px] h-[22px]'/></div>+966 50 300 7773</div>
-            <div className='flex gap-2 items-center font-semibold text-sm'><div className='border-2 border-solid p-3 border-primary rounded-full'><FaLocationDot className='text-primary w-[22px] h-[22px] '/></div>Saudi arabia- P.o box 42323 medina</div>
-            <div className='flex gap-2 items-center font-semibold text-sm'><div className='border-2 border-solid p-3 border-primary rounded-full'><FaClock className='text-primary w-[22px] h-[22px]' /></div>Sat – thu 09:00 am – 5:00 pm</div>
+            <div className='flex gap-2 items-center font-semibold text-sm whitespace-nowrap'><div className='border-2 border-solid p-3 border-primary rounded-full'><FaPhoneAlt className='text-primary w-[22px] h-[22px]'/></div>+966 50 300 7773</div>
+            <div className='flex gap-2 items-center font-semibold text-sm whitespace-nowrap'><div className='border-2 border-solid p-3 border-primary rounded-full'><FaLocationDot className='text-primary w-[22px] h-[22px] '/></div>Saudi arabia- P.o box 42323 medina</div>
+            <div className='flex gap-2 items-center font-semibold text-sm whitespace-nowrap'><div className='border-2 border-solid p-3 border-primary rounded-full'><FaClock className='text-primary w-[22px] h-[22px]' /></div>Sat – thu 09:00 am – 5:00 pm</div>
           </div>
         </div>
      </div>
