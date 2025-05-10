@@ -64,7 +64,7 @@ const Header = () => {
             <Link href="./"><p>Home</p></Link>
             <Link href="./projects"><p>Projects</p></Link>
             <div onMouseOver={()=> setMenu(true)} onMouseLeave={()=> setMenu(false)} className='relative flex justify-center h-full items-center hover:cursor-pointer gap-2' ><p>About</p>
-                {menu && (<ul className='absolute top-12 left-0 right-0 bg-white self-center  h-[200px] w-[150px]  text-[#cc7351] flex flex-col justify-evenly items-center text-lg z-50 transition-all ease-in-out duration-300  inset-shadow-md' onMouseOver={()=> setMenu(true)} >
+                {menu && (<ul className='absolute top-12 2xl:top-10 left-0 right-0 bg-white self-center  h-[200px] w-[150px]  text-[#cc7351] flex flex-col justify-evenly items-center text-lg z-50 transition-all ease-in-out duration-300  inset-shadow-md' onMouseOver={()=> setMenu(true)} >
                   <Link href="/about" className="bg-white hover:text-white w-full hover:cursor-pointer p-1  flex-1 flex items-center justify-center shadow-md hover:bg-[#cc7351]"><li >About</li></Link>
                   <Link href="/vision" className="bg-white hover:text-white w-full hover:cursor-pointer flex-1 flex items-center justify-center shadow-md hover:bg-[#cc7351]"><li>Vision</li></Link>
                  <Link href="/values" className="bg-white hover:text-white w-full hover:cursor-pointer flex-1 flex items-center justify-center shadow-md hover:bg-[#cc7351]"> <li>Values</li></Link>
